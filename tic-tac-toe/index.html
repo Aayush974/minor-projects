@@ -7,8 +7,10 @@
   <title>Document</title>
 </head>
 <body>
-  <div id="wrapper" class = "w-screen h-screen flex justify-center items-center">
-    <div id="game-container" class="w-[500px] h-[500px] flex flex-col">
+  <!-- wrapper div starts -->
+  <div id="wrapper" class = "w-screen h-screen flex justify-center items-center flex-col gap-12  bg-yellow-300">
+    <!-- game-container starts -->
+    <div id="game-container" class="w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[410px] lg:h-[410px] flex flex-col">
 
   <!-- 1st row -->
       <div id="1st-row" class="grow basis-0  flex">
@@ -151,13 +153,56 @@
       </div>
       
  
-    </div>
-
-    <button class="outline-dashed absolute bottom-48 w-fit p-4 rounded-sm">
-       START GAME
+    </div><!--game container ends-->
+    
+    <!-- entry and reset button -->
+    <div>
+    <button id = "player_btn" class="w-fit p-4 rounded-lg font-extrabold mr-6 bg-orange-600 text-white border-2 border-white shadow-xl text-base md:text-lg lg:text-xl">
+      PLAYER ENTRY
+     </button>
+    <button id = "reset_btn" class="w-fit p-4 rounded-lg font-extrabold bg-orange-600 text-white border-2 border-white shadow-xl text-base md:text-lg lg:text-xl">
+      RESET GAME
     </button>
+    </div>
+    
 
+  </div><!-- wrapper div ends-->
+
+
+  <!-- player entry box -->
+  <div id = "playerEntry" class=" opacity-0 absolute top-0 left-1/2 translate-x-[-50%]  pr-4 pl-4 bg-yellow-500 rounded-md shadow-neutral-500 shadow-lg w-72  sm:w-80  md:w-96  lg:w-[410px]">
+
+   <div class=" w-fit m-auto mb-8 mt-4  font-extrabold text-base md:text-xl lg:text-2xl">ENTER PLAYERS NAME</div>
+
+   <div class = "mb-4 flex justify-center items-center">
+    
+    <span>
+      <label for="player1" class="font-bold text-base md:text-lg lg:text-xl">Player1:</label>
+      <input id="player1" type="text" placeholder="" class="border-b-2 border-solid border-black bg-yellow-500 text-base md:text-lg lg:text-xl"> 
+    </span>
+      
+   </div>
+
+   <div class = "mb-6 flex justify-center items-center">
+
+    <span>
+      <label for="player2" class="font-bold text-base md:text-lg lg:text-xl">Player2:</label>
+      <input id="player2" type="text" placeholder="" class="border-b-2 border-solid border-black bg-yellow-500 text-base md:text-lg lg:text-xl">
+    </span>
+     
   </div>
+
+  <button class="m-auto block p-2 mb-4 text-white font-semibold bg-orange-700 shadow-2xl border-2 rounded-lg text-base md:text-lg lg:text-xl">
+    ENTER
+  </button>
+
+  </div> <!-- player entry box end -->
+
+  <!-- winner declaration -->
+  <div class="absolute opacity-0 underline top-0 left-1/2 translate-x-[-50%] w-fit p-2 rounded-lg font-extrabold text-gray-600 text-lg md:text-xl lg:text-2xl">
+    PLAYER 1 WINS 
+  </div>
+
 </body>
 <script src="script.js"></script>
 </html>
