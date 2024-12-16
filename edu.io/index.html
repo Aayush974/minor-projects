@@ -6,10 +6,10 @@
   <title>edu.io</title>
   <link rel="stylesheet" href="output.css">
 </head>
-<body class="bg-green-700">
+<body class="bg-green-800">
   
 <!-- nav bar -->
- <nav class="bg-green-800 w-full pt-4 pb-4 flex justify-center items-center shadow-down">
+ <nav class="bg-green-800 w-full pt-4 pb-4 flex justify-center items-center shadow-down fixed top-0">
 
    <div class="w-11/12 flex justify-between"> <!--nav inside wrapper -->
      
@@ -19,10 +19,10 @@
       
      <!-- menu close state -->
      <div id="menu_close_state" class="flex justify-evenly items-center gap-6 lg:gap-10 font-bold cursor-pointer">
-       <div class="hidden text-white md:block md:text-xl lg:text-2xl hover:underline hover:scale-110 lg:hover:scale-125">HOME</div>
-       <div class="hidden text-white md:block md:text-xl lg:text-2xl hover:underline hover:scale-110 lg:hover:scale-125">COURSES</div>
-       <div class="hidden text-white md:block md:text-xl lg:text-2xl hover:underline hover:scale-110 lg:hover:scale-125">CONTACT US</div>
-       <div class="hidden text-white md:block md:text-xl lg:text-2xl hover:underline hover:scale-110 lg:hover:scale-125">SUBS</div>
+       <div class="hidden text-white md:block md:text-xl lg:text-2xl hover:underline hover:scale-110 lg:hover:scale-125 transition-all">HOME</div>
+       <div class="hidden text-white md:block md:text-xl lg:text-2xl hover:underline hover:scale-110 lg:hover:scale-125 transition-all">COURSES</div>
+       <div class="hidden text-white md:block md:text-xl lg:text-2xl hover:underline hover:scale-110 lg:hover:scale-125 transition-all">CONTACT US</div>
+       <div class="hidden text-white md:block md:text-xl lg:text-2xl hover:underline hover:scale-110 lg:hover:scale-125 transition-all">SUBS</div>
        <div id="hamburger_menu_open" class="w-14 h-9 relative md:hidden"><!--hamburger menu -->
          <div class="absolute w-full top-0  border-[3px] border-solid border-white"></div>
          <div class="absolute w-full top-50% translate-y-(-2/4) border-[3px] border-solid border-white"></div>
@@ -31,7 +31,7 @@
      </div>
 
      <!-- menu open state -->
-     <div id="menu_open_state" class="hidden justify-normal items-center gap-12 font-bold absolute top-0 right-0  w-2/4 h-full flex-col z-10 backdrop-blur-sm bg-rgba shadow-left">
+     <div id="menu_open_state" class="hidden h-screen justify-normal items-center gap-12 font-bold absolute top-0 right-0  w-2/4 flex-col z-10 backdrop-blur-md bg-rgba shadow-left">
       
       <div class="w-full">
 
@@ -58,26 +58,69 @@
 
  <!--header-->
 
- <header class="flex flex-col flex-wrap gap-4 items-center justify-center w-full mt-12 m-auto lg:flex-row shadow-inner bg-green-700">
+ <header class="flex flex-col flex-wrap gap-4 items-center justify-center w-full pt-28 m-auto lg:flex-row shadow-inner bg-green-700">
   
-  <div class="w-full p-2 text-center text-white font-semibold text-sm sm:text-base md:text-lg lg:text-xl
+  <div class="w-full p-2 text-center text-white font-semibold text-base sm:text-lg md:text-xl lg:text-2xl
     lg:basis-2/5 ">
    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sint illo natus omnis dolore aspernatur, quisquam quidem consequatur ipsum quas, provident itaque fuga ab beatae, accusantium repudiandae. Delectus, corporis expedita.
   </div>
 
   <div class="w-full p-2 flex justify-center
    lg:basis-1/3">
-   <img src="assets/logo .jpg" alt="" class="w-44 h-44 sm:w-48 sm:h-48 md:w-52 md:h-52 lg:w-56 lg:h-56 rounded-xl">
+   <img src="assets/logo .jpg" alt="" class="w-44 h-44 sm:w-48 sm:h-48 md:w-52 md:h-52 lg:w-56 lg:h-56 rounded-xl shadow-down">
   </div>
 
   <div class="w-full p-2 flex justify-center
    lg:mt-10 ">
    <button class="bg-black text-white p-4 rounded-2xl  cursor-pointer mb-12 font-bold text-sm sm:text-base md:text-lg lg:text-xl">
-    TRY NOW!
+    SIGN UP
    </button>
   </div>
 
  </header>
+
+ <main class="w-full bg-green-800 mb-10">
+
+ <div class="pt-10 w-full flex flex-col justify-center items-center lg:flex-row">
+  <div class="w-full p-2 flex justify-center
+  lg:basis-3/6 xl:basis-2/5">
+  <img src="assets/image 1.jpg" alt="" class="w-3/5 h-64  sm:h-72  md:h-80  lg:w-11/12 lg:h-96 rounded-xl shadow-2xl">
+  </div>
+  <div class="w-3/4 p-2 text-white lg:basis-3/6 xl:basis-2/5">
+   <h1 class="w-full text-center mb-6 underline font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-amber-500">HEADING 1</h1>
+   <div class="w-full text-center  text-base sm:text-lg md:text-xl lg:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sint illo natus omnis dolore aspernatur, quisquam quidem consequatur ipsum quas, provident itaque fuga ab beatae, accusantium repudiandae.</div>
+  </div>
+ </div>
+
+ <div class="mt-16 w-full flex flex-col justify-center items-center lg:flex-row">
+  <div class="w-full p-2 flex justify-center
+  lg:basis-3/6 lg:order-2 xl:basis-2/5">
+  <img src="assets/image 2.jpg" alt="" class="w-3/5 h-64  sm:h-72  md:h-80  lg:w-11/12 lg:h-96 rounded-xl shadow-2xl">
+  </div>
+  <div class="w-3/4 p-2 text-white lg:basis-3/6 xl:basis-2/5">
+    <h1 class="w-full text-center mb-6 underline font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-amber-500">HEADING 2</h1>
+    <div class="w-full text-center  text-base sm:text-lg md:text-xl lg:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sint illo natus omnis dolore aspernatur, quisquam quidem consequatur ipsum quas, provident itaque fuga ab beatae, accusantium repudiandae.</div>
+   </div>
+ </div>
+
+ <div class="mt-16 w-full flex flex-col justify-center items-center lg:flex-row">
+  <div class="w-full p-2 flex justify-center
+  lg:basis-3/6 xl:basis-2/5">
+  <img src="assets/image 3.jpg" alt="" class="w-3/5 h-64  sm:h-72  md:h-80  lg:w-11/12 lg:h-96 rounded-xl shadow-2xl">
+  </div>
+  <div class="w-3/4 p-2 text-white lg:basis-3/6 xl:basis-2/5">
+    <h1 class="w-full text-center mb-6 underline font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-amber-500">HEADING 3</h1>
+    <div class="w-full text-center  text-base sm:text-lg md:text-xl lg:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sint illo natus omnis dolore aspernatur, quisquam quidem consequatur ipsum quas, provident itaque fuga ab beatae, accusantium repudiandae.</div>
+   </div>
+ </div>
+
+ </main>
+
+ <footer class="bg-black flex justify-around items-baseline p-4 gap-6 flex-wrap">
+   <div class="text-white w-fit text-center text-xs sm:text-sm md:text-base lg:text-lg">PHONE: 98971#####,9192########</div>
+   <div class="text-white w-fit text-center text-xs sm:text-sm md:text-base lg:text-lg">EMAIL: education@edu.io@gmail.com</div>
+   <div class="text-white text-center w-fit text-xs sm:text-sm md:text-base lg:text-lg"> ADDRESS: shanti nagar block 123,near gol chauraha rataudigad</div>
+ </footer>
 
 </body>
 <script src="js/indexScript.js"></script>
