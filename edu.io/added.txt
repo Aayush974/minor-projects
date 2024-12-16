@@ -1,0 +1,23 @@
+this file contains the extened theme in tailwindcss 
+extend: {
+      colors: {
+        'regal-blue': '#243c5a',
+      },
+      translate: {
+        '(-2/4)': '-50%',
+      },
+      inset:{
+       '50%' :'50%',
+      },
+      rotate: {
+        '(-45)' : '-45deg',
+      },
+      colors: {
+        'rgba' : 'rgba(74,222,128,30%)'
+      },
+      boxShadow: {
+        'down' : 'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px',
+        'left' : 'rgb(38, 57, 77) 0px 20px 30px -10px',
+        'inner': 'rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset'
+      }
+    }
