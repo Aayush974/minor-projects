@@ -1,0 +1,34 @@
+/* extra css file to enable the 3d flip effects of cards since tailwind does not have transform style and backface visibilitty */
+
+#card{
+  transform-style: preserve-3d;
+}
+
+#card_content{
+  transform-style: preserve-3d;
+ transition: transform 3s;
+}
+
+#card:hover #card_content{
+  transform: rotateY(180deg);
+}
+
+#card_back{
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+#card_front{
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+#subs_type{
+  transform: translateZ(100px);
+}
+
+#subs_price,#subs_perks,#back_content{
+  transform: translateZ(50px);
+}
+
