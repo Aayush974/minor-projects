@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>edu.io-contact</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-green-700">
+
+  <!-- nav bar -->
+ <nav class="bg-green-800 w-full pt-4 pb-4 flex justify-center items-center shadow-down fixed top-0 z-50">
+
+  <div class="w-11/12 flex justify-between"> <!--nav inside wrapper -->
+    
+    <div class="text-3xl md:text-4xl lg:text-5xl font-bold flex justify-center items-center text-white   cursor-pointer">
+       EDU.IO
+    </div> <!-- company title -->
+     
+    <!-- menu close state -->
+    <div id="menu_close_state" class="flex justify-evenly items-center gap-6 lg:gap-10 font-bold cursor-pointer">
+      <div class="hidden text-white md:block md:text-xl lg:text-2xl hover:underline hover:scale-110 lg:hover:scale-125 transition-all"><a href="index.html">HOME</a></div>
+      <div class="hidden text-white md:block md:text-xl lg:text-2xl hover:underline hover:scale-110 lg:hover:scale-125 transition-all"><a href="courses.html">COURSES</a></div>
+      <div class="hidden text-white md:block md:text-xl lg:text-2xl hover:underline hover:scale-110 lg:hover:scale-125 transition-all"><a href="contact.html">CONTACT US</a></div>
+      <div class="hidden text-white md:block md:text-xl lg:text-2xl hover:underline hover:scale-110 lg:hover:scale-125 transition-all"><a href="subscription.html">SUBS</a></div>
+      <div id="hamburger_menu_open" class="w-14 h-9 relative md:hidden"><!--hamburger menu -->
+        <div class="absolute w-full top-0  border-[3px] border-solid border-white"></div>
+        <div class="absolute w-full top-50% translate-y-(-2/4) border-[3px] border-solid border-white"></div>
+        <div class="absolute w-full bottom-0   border-[3px] border-solid border-white"></div>
+      </div>
+    </div>
+
+    <!-- menu open state -->
+    <div id="menu_open_state" class="hidden h-screen justify-normal items-center gap-12 font-bold absolute top-0 right-0  w-2/4 flex-col z-10 backdrop-blur-md bg-rgba shadow-left">
+     
+     <div class="w-full">
+
+       <div id="hamburger_menu_close" class="w-16 h-11 relative top-4 left-2 cursor-pointer"><!--hamburger menu -->
+         <div class="absolute w-full top-50% translate-y-(-2/4) rotate-45 border-4 border-solid border-white"></div>
+         <div class="absolute w-full top-50% translate-y-(-2/4) rotate-(-45) border-4 border-solid border-white"></div>
+         <div class="hidden absolute w-full bottom-0  border-4 border-solid border-white"></div>
+       </div>
+
+     </div>
+     
+     <div class="w-full flex flex-col gap-4">
+      <div class=" text-white w-full p-2 border-b-2 border-solid border-white cursor-pointer"><a href="index.html">HOME</a></div>
+      <div class=" text-white w-full p-2 border-b-2 border-solid border-white cursor-pointer"><a href="courses.html">COURSES</a></div>
+      <div class=" text-white w-full p-2 border-b-2 border-solid border-white cursor-pointer"><a href="contact.html">CONTACT US</a></div>
+      <div class=" text-white w-full p-2 border-b-2 border-solid border-white cursor-pointer"><a href="subscription.html">SUBS</a></div>
+     </div>
+     
+   </div>
+
+   </div><!--nav inside wrapper ends-->
+
+</nav>
+
+<!-- body  -->
+<div class="w-full pt-28">
+  
+  <div class="flex justify-center items-center flex-col flex-wrap w-11/12 m-auto lg:flex-row">
+
+    <!-- phone -->
+    <div class="w-2/4 pr-8 pl-8 pb-4 border-b-2 border-solid border-white order-1 lg:border-b-0 lg:mt-8 xl:basis-1/3">
+      <h1 class="text-center mb-2 text-xl font-bold sm:text-2xl md:text-3xl md:mb-4 lg:text-4xl">NUMBER</h1>
+      <div class="w-full flex flex-col justify-start">
+          <span class="text-base md:text-lg lg:text-xl text-center"><span class="font-medium">PHONE: </span> 98971######</span>
+          <span class="text-base md:text-lg lg:text-xl text-center"><span class="font-medium">TEL: </span >0522######</span>
+      </div>
+    </div>
+    <!-- address -->
+    <div class="w-2/4  pr-8 pl-8 pb-4 mt-8 border-b-2 border-solid border-white order-2 lg:border-b-0 lg:border-l-2 xl:basis-1/3 xl:border-r-2">
+      <h1 class="text-center mb-2 text-xl font-bold sm:text-2xl md:text-3xl md:mb-4 lg:text-4xl">ADDRESS</h1>
+      <div class="w-full flex flex-col justify-start">
+          <span class="text-base md:text-lg lg:text-xl text-center"><span class="font-medium">Main branch: </span> random ass adress no one will bother to read</span>
+          <span class="text-base md:text-lg lg:text-xl text-center"><span class="font-medium">Sub branch: </span> random ass adress no one will bother to read</span>
+      </div>
+    </div>
+    <!-- socials -->
+    <div class="w-2/4  pr-8 pl-8 pb-4 mt-8 border-b-2 border-solid border-white order-3 lg:border-b-0 lg:border-r-2 lg:mt-16 xl:basis-1/3 xl:border-r-0 xl:order-4">
+      <h1 class="text-center mb-2 text-xl font-bold sm:text-2xl md:text-3xl md:mb-4 lg:text-4xl">SOCIALS</h1>
+      <div class="w-full flex flex-col justify-start">
+          <div class="mb-2 flex justify-center items-center gap-1 font-medium text-base md:text-lg lg:text-xl text-center"><img src="assets/icons/instagram.png" alt="insta" class="w-4 h-4"><a href="http://instagram.com" target="_blank" class="hover:underline hover:text-blue-950 transition-colors">random insta handle</a></div>
+          <div class="mb-2 flex justify-center items-center gap-1 font-medium text-base md:text-lg lg:text-xl text-center"><img src="assets/icons/youtube.png" alt="yt" class="w-4 h-4"><a href="http://youtube.com" target="_blank" class="hover:underline hover:text-blue-950 transition-colors">random youtube handle</a></div>
+          <div class="mb-2 flex justify-center items-center gap-1 font-medium text-base md:text-lg lg:text-xl text-center"><img src="assets/icons/twitter.png" alt="twitter" class="w-4 h-4"><a href="http://x.com" target="_blank" class="hover:underline hover:text-blue-950 transition-colors">random twitter handle</a></div>
+      </div>
+    </div>
+     <!-- mail -->
+     <div class="w-2/4  pr-8 pl-8 pb-4 mt-8 border-b-2 border-solid border-white order-4  flex justify-center items-center flex-col lg:border-b-0 lg:mt-16 xl:basis-1/3 xl:mt-8 xl:order-3">
+      <h1 class="text-center mb-2 text-xl font-bold sm:text-2xl md:text-3xl md:mb-4 lg:text-4xl">E-MAIL</h1>
+      <div class="w-fit flex flex-col justify-start">
+          <div class="text-base md:text-lg lg:text-xl text-center"><span class="font-medium">MAIL 1: </span>its12midnightamsrn@sleepyaf</div>
+          <div class="text-base md:text-lg lg:text-xl text-center"><span class="font-medium">MAIL 2: </span>its12midnightamsrn@sleepyaf</div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<!-- body ends -->
+
+</body>
+</html>
