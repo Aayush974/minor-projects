@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>edu.io-courses</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-green-700">
+
+<!-- nav bar -->
+<nav class="bg-green-800 w-full pt-4 pb-4 flex justify-center items-center shadow-down fixed top-0 z-50">
+
+  <div class="w-11/12 flex justify-between"> <!--nav inside wrapper -->
+    
+    <div class="text-3xl md:text-4xl lg:text-5xl font-bold flex justify-center items-center text-white   cursor-pointer">
+       EDU.IO
+    </div> <!-- company title -->
+     
+    <!-- menu close state -->
+    <div id="menu_close_state" class="flex justify-evenly items-center gap-6 lg:gap-10 font-bold cursor-pointer">
+      <div class="hidden text-white md:block md:text-xl lg:text-2xl hover:underline hover:scale-110 lg:hover:scale-125 transition-all"><a href="index.html">HOME</a></div>
+      <div class="hidden text-white md:block md:text-xl lg:text-2xl hover:underline hover:scale-110 lg:hover:scale-125 transition-all"><a href="courses.html">COURSES</a></div>
+      <div class="hidden text-white md:block md:text-xl lg:text-2xl hover:underline hover:scale-110 lg:hover:scale-125 transition-all"><a href="contact.html">CONTACT US</a></div>
+      <div class="hidden text-white md:block md:text-xl lg:text-2xl hover:underline hover:scale-110 lg:hover:scale-125 transition-all"><a href="subscription.html">SUBS</a></div>
+      <div id="hamburger_menu_open" class="w-14 h-9 relative md:hidden"><!--hamburger menu -->
+        <div class="absolute w-full top-0  border-[3px] border-solid border-white"></div>
+        <div class="absolute w-full top-50% translate-y-(-2/4) border-[3px] border-solid border-white"></div>
+        <div class="absolute w-full bottom-0   border-[3px] border-solid border-white"></div>
+      </div>
+    </div>
+
+    <!-- menu open state -->
+    <div id="menu_open_state" class="hidden h-screen justify-normal items-center gap-12 font-bold absolute top-0 right-0  w-2/4 flex-col z-10 backdrop-blur-md bg-rgba shadow-left">
+     
+     <div class="w-full">
+
+       <div id="hamburger_menu_close" class="w-16 h-11 relative top-4 left-2 cursor-pointer"><!--hamburger menu -->
+         <div class="absolute w-full top-50% translate-y-(-2/4) rotate-45 border-4 border-solid border-white"></div>
+         <div class="absolute w-full top-50% translate-y-(-2/4) rotate-(-45) border-4 border-solid border-white"></div>
+         <div class="hidden absolute w-full bottom-0  border-4 border-solid border-white"></div>
+       </div>
+
+     </div>
+     
+     <div class="w-full flex flex-col gap-4">
+      <div class=" text-white w-full p-2 border-b-2 border-solid border-white cursor-pointer"><a href="index.html">HOME</a></div>
+      <div class=" text-white w-full p-2 border-b-2 border-solid border-white cursor-pointer"><a href="courses.html">COURSES</a></div>
+      <div class=" text-white w-full p-2 border-b-2 border-solid border-white cursor-pointer"><a href="contact.html">CONTACT US</a></div>
+      <div class=" text-white w-full p-2 border-b-2 border-solid border-white cursor-pointer"><a href="subscription.html">SUBS</a></div>
+     </div>
+     
+   </div>
+
+   </div><!--nav inside wrapper ends-->
+
+</nav>
+
+<!-- header -->
+<header class="w-10/12 pt-28 m-auto flex flex-col gap-4 items-center lg:flex-row lg:gap-0 lg:justify-between">
+  <div  class="text-center w-10/12 lg:basis-2/5">
+    <h1 class="font-bold text-black text-2xl md:text-3xl md:mb-2 lg:text-4xl lg:mb-4">Edu.io</h1>
+    <div class="font-normal text-white text-base md:text-lg lg:text-xl lg:text-left">interactive LIVE and self paced courses available</div>
+    <div class="font-normal text-white text-base md:text-lg lg:text-xl lg:text-left hover:underline hover:text-blue-950 transition-colors hover:cursor-pointer">+91 9887877756</div>
+  </div>
+  <div class="w-10/12 h-8 pt-1 pb-1 flex justify-center bg-white rounded-xl md:w-11/12 md:h-9 lg:basis-1/2 lg:h-12 border-2 border-solid hover:border-neutral-900 hover:shadow-lg transition-colors">
+    <input type="text" placeholder="search for course..." class="w-11/12 outline-none">
+    <img src="assets/icons/search.png" alt="search" class="h-full">
+  </div>
+</header>
+
+<main class="w-11/12">
+
+</main>
+
+
+</body>
+<script src="js/indexScript.js"></script>
+</html>
